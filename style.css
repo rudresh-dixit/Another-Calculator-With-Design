@@ -1,0 +1,125 @@
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+
+body{ 
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+}
+
+#container{
+    width: 1000px;
+    height: 670px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(bgImg.jpg); 
+    /*linear gradient to make bgImg look some darker, rgba - sets background images of element*/
+    margin: 20px auto; /*margain with tbrl configuration*/
+}
+
+#calculator{
+    width: 320px; /*width of calculator box*/
+    height: 520px; /*height of calculator box*/
+    background-color: #eaedef;
+    margin: 0 auto; /*TBRL configuration -- top bottom 0px, right left auto*/
+    top: 20px; /*to give it some space on top*/
+    position: relative; to give it some space on top
+    border-radius: 5px; /*for curved edges*/
+    margin-top: ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /*first two are x and y offset*/
+    /*y - shadow falls down, x - shadow falls right*/
+    /* third parameter - blurr, fourth parameter - spread*/
+    /*final one is color*/
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 20px; /*height of history box*/
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191; /*grey color to differentiate between output and history*/
+}
+
+#output{
+    text-align: right; /*text alignment - right*/
+    height: 60px; /*height of output box*/
+    margin: 10px 20px; /*margain in tbrl configuration*/
+    font-size: 30px; /*a slight bigger font size*/
+}
+
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px; /*width and height of each box of number or operator*/
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%; /*to look buttons circular*/
+    border-width: 0; /*remove the border width*/
+    font-weight: bold; /*bold the button text*/
+    font-size: 15px;
+}
+
+.number, .empty{
+    background-color: #eaedef; /*to blend the button color with that of calculator*/
+}
+
+.number, .operator{
+    cursor: pointer; /*as we hover over the cursor turns to hand signal*/
+}
+
+.number:active, .operator:active{
+    font-size: 13px; /*give them some style when the user clicks | when we click it it appears to be small*/
+
+}
+
+/*the boundary box appears when we click, let's remove it*/
+.number:focus, .operator:focus, .empty:focus{
+    outline: 0; /*now the box boundary disappears*/
+}
+
+button:nth-child(4){
+    /*stand apart the operators, every 4th element*/
+    font-size: 20px; 
+    background-color: #20b2aa;
+}
+
+button:nth-child(8){
+    /*stand apart the operators, every 4th element*/
+    font-size: 20px; 
+    background-color: #ffa500;
+}
+
+button:nth-child(12){
+    /*stand apart the operators, every 4th element*/
+    font-size: 20px; 
+    background-color: #f08080;
+}
+
+button:nth-child(16){
+    /*stand apart the operators, every 4th element*/
+    font-size: 20px; 
+    background-color: #7d93e0;
+}
+
+button:nth-child(20){
+    /*stand apart the operators, every 4th element*/
+    font-size: 20px; 
+    background-color: #9477af;
+}
+
+/*Now the design of the calculator is completed*/
+/*Now start with logical part of the calculator*/
+
+
+
+
+
+
